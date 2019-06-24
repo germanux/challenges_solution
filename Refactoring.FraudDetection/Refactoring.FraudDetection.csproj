@@ -41,8 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="NewRadar\FileReader.cs" />
     <Compile Include="FraudRadar.cs" />
+    <Compile Include="NewRadar\FraudChecker.cs" />
+    <Compile Include="NewRadar\NewFraudRadar.cs" />
+    <Compile Include="NewRadar\NewFraudResult.cs" />
+    <Compile Include="NewRadar\NewOrder.cs" />
+    <Compile Include="NewRadar\OrderFactory.cs" />
+    <Compile Include="NewRadar\OrderNormalizer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NewRadar\Singleton.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

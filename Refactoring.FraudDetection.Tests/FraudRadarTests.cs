@@ -12,6 +12,7 @@ namespace Payvision.CodeChallenge.Refactoring.FraudDetection.Tests
     using System.Linq;
     using FluentAssertions;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
+    using Payvision.CodeChallenge.Refactoring.FraudDetection.NewRadar;
 
     [TestClass]
     public class FraudRadarTests
@@ -62,9 +63,9 @@ namespace Payvision.CodeChallenge.Refactoring.FraudDetection.Tests
 
         
 
-        private static List<FraudRadar.FraudResult> ExecuteTest(string filePath)
+        private static List<NewFraudResult> ExecuteTest(string filePath)
         {
-            var fraudRadar = new FraudRadar();
+            var fraudRadar = new NewFraudRadar();
 
             return fraudRadar.Check(filePath).ToList();
         }
